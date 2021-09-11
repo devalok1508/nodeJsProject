@@ -8,7 +8,7 @@ mongoose.connect(DB).then(()=>{
 
 console.log("Connection success mongoose");
 
-}).catch((error)=>console.log("Error in connection not stable.",error))
+}).catch((error)=>console.log("Error in connection not stable.",error)) // A
 const app = express();// Setup server port
 const port = process.env.PORT || 4000;// parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }))// parse requests of content-type - application/json
